@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "platformAutomerge": true,
+  "platformCommit": "enabled",
+  "automergeType": "pr",
+  "automergeStrategy": "squash",
+  "extends": [
+    ":semanticCommits",
+    "config:recommended",
+    ":configMigration",
+    ":pinAllExceptPeerDependencies",
+    "customManagers:biomeVersions"
+  ]
+}
