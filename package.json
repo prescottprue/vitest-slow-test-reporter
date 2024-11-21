@@ -14,7 +14,6 @@
     "types:check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "prescottprue",
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -25,6 +24,20 @@
     "typescript": "5.6.3",
     "vitest": "2.1.5"
   },
+  "peerDependencies": {
+    "vitest": ">1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prescottprue/vitest-slow-test-reporter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prescottprue/vitest-slow-test-reporter/issues"
+  },
+  "author": {
+    "name": "Prescott Prue",
+    "url": "https://github.com/prescottprue"
+  },
   "lint-staged": {
     "*.{js,ts,json,md,yaml,yml}": [
       "biome check --no-errors-on-unmatched --write"
@@ -34,5 +47,8 @@
     "vitest",
     "reporter",
     "slow"
+  ],
+  "files": [
+    "dist"
   ]
 }
